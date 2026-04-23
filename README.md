@@ -6,6 +6,8 @@
 
 ![fig_conceptual_overview_standalone.png](docs/assets/fig_conceptual_overview_standalone.png)
 
+https://github.com/user-attachments/assets/42d36ff8-c322-431b-a715-68bd7fd87a63
+
 ## Motivation
 
 Major depressive disorder affects approximately 236 million people worldwide and is a leading cause
