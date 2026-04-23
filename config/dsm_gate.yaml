@@ -1,0 +1,22 @@
+# DSM-Gate Configuration
+# Implements clinical logic derived from DSM-5 criteria for
+# Major Depressive Episode detection.
+#
+# Per-indicator presence (N-of-M rule):
+#   I_k(d) = 1 if L_k(d) >= theta else 0
+#   present(k) = true if SUM(I_k(d), d=t-M+1..t) >= gate_need
+#
+# Episode decision (aggregation of present indicators):
+#   episode = (SUM present_k >= min_indicators) AND (core1 OR core2)
+
+# Threshold for daily likelihood (0-1)
+# A day counts as "active" for an indicator if likelihood >= theta
+theta: 0.6
+
+# Sliding-window size in days
+# DSM-5: "present during the same 2-week period"
+m_window: 14
+
+# Required positive days within the window for indicator presence
+# Operationalises DSM-5 phrase "nearly every day"
+gate_need: 10

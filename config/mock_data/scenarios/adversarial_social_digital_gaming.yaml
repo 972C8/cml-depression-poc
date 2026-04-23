@@ -1,0 +1,95 @@
+# Scenario: Adversarial ()
+name: adversarial social digital gaming
+description: "Young adult alone in room playing games online with friends — high network activity, high social interaction, load environment"
+schedule:
+  active_hours:
+    start: 20
+    end: 24
+  day_pattern:
+    days_on: 2
+    days_off: 1
+    offset: 1
+overrides:
+  context:
+    people_in_room:
+      baseline: 1
+      variance: 0
+      max_value: 1
+      enforce_integer_value: true
+    ambient_noise: # main difference to solitary_digital.yaml
+      baseline: 0.9
+      variance: 0.1
+    network_activity_level:
+      baseline: 0.9
+      variance: 0.1
+    door_open_events:
+      baseline: 1
+      variance: 1
+      max_value: 1
+      enforce_integer_value: true
+  biomarkers:
+    network:
+      reduced_social_interaction:
+        baseline: 0.6
+        variance: 0.2
+        daily_cycle: false
+      passive_media_binge:
+        baseline: 0.6
+        variance: 0.2
+        daily_cycle: false
+      shrinking_domain_diversity:
+        baseline: 0.6
+        variance: 0.2
+        daily_cycle: false
+      reduced_interactive_engagement:
+        baseline: 0.6
+        variance: 0.2
+        daily_cycle: false
+      food_ordering_pattern_shift:
+        baseline: 0.6
+        variance: 0.2
+        daily_cycle: false
+      calorie_nutrition_information_seeking:
+        baseline: 0.6
+        variance: 0.2
+        daily_cycle: false
+      shifted_sleep_timing:
+        baseline: 0.6
+        variance: 0.2
+        daily_cycle: false
+      changed_sleep_duration:
+        baseline: 0.6
+        variance: 0.2
+        daily_cycle: false
+      restless_device_switching:
+        baseline: 0.6
+        variance: 0.2
+        daily_cycle: false
+      slowed_variable_typing_dynamics:
+        baseline: 0.6
+        variance: 0.2
+        daily_cycle: false
+      extended_daytime_inactivity:
+        baseline: 0.6
+        variance: 0.2
+        daily_cycle: false
+      decline_effortful_interaction:
+        baseline: 0.6
+        variance: 0.2
+        daily_cycle: false
+      engagement_with_mental_health_content:
+        baseline: 0.6
+        variance: 0.2
+        daily_cycle: false
+      digital_self_withdrawal_data_purge_behavior:
+        baseline: 0.6
+        variance: 0.2
+        daily_cycle: false
+      fragmented_focus:
+        baseline: 0.6
+        variance: 0.2
+        daily_cycle: false
+      indecisive_information_seeking:
+        baseline: 0.6
+        variance: 0.2
+        daily_cycle: false

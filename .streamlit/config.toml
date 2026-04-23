@@ -1,0 +1,12 @@
+[server]
+port = 8501
+address = "0.0.0.0"
+
+[client]
+showSidebarNavigation = true
+
+[browser]
+gatherUsageStats = false
+
+[theme]
+base = "light"

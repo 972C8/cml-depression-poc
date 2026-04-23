@@ -1,0 +1,76 @@
+# Context Weight Multipliers
+# Adjusts biomarker importance based on detected context
+#
+# Multiplier > 1.0: Biomarker is more relevant in this context
+# Multiplier < 1.0: Biomarker is less relevant in this context
+# Missing biomarkers default to multiplier of 1.0
+#
+# For solitary_digital scenario (evaluation 2.1):
+# - Speech biomarkers → 0.5: person is alone in bed at night, unlikely to be speaking
+# - Network biomarkers → 1.5: person is actively browsing social media
+
+solitary_digital:
+  # Speech biomarkers (dampened — person is alone, minimal speech)
+  whispering: 0.5
+  prolonged_pauses: 0.5
+  monoquality: 0.5
+  monopitch: 0.5
+  pitch: 0.5
+  voice_breathiness_noise: 0.5
+  speech_prosody: 0.5
+  speech_quality: 0.5
+  slow_speech: 0.5
+  voice_production: 0.5
+  vocalization: 0.5
+  # Network biomarkers (amplified — person is actively browsing)
+  reduced_social_interaction: 1.5
+  passive_media_binge: 1.5
+  shrinking_domain_diversity: 1.5
+  reduced_interactive_engagement: 1.5
+  food_ordering_pattern_shift: 1.5
+  calorie_nutrition_information_seeking: 1.5
+  shifted_sleep_timing: 1.5
+  changed_sleep_duration: 1.5
+  restless_device_switching: 1.5
+  slowed_variable_typing_dynamics: 1.5
+  extended_daytime_inactivity: 1.5
+  decline_effortful_interaction: 1.5
+  engagement_with_mental_health_content: 1.5
+  digital_self_withdrawal_data_purge_behavior: 1.5
+  fragmented_focus: 1.5
+  indecisive_information_seeking: 1.5
+  crisis_oriented_help_seeking: 1.5
+  self_harm_community_engagement: 1.5
+
+adversarial_social_digital_gaming:
+  # Speech biomarkers (amplified — person is gaming with friends via voice chat)
+  whispering: 1.5
+  prolonged_pauses: 1.5
+  monoquality: 1.5
+  monopitch: 1.5
+  pitch: 1.5
+  voice_breathiness_noise: 1.5
+  speech_prosody: 1.5
+  speech_quality: 1.5
+  slow_speech: 1.5
+  voice_production: 1.5
+  vocalization: 1.5
+  # Network biomarkers (dampened — network activity is gaming traffic, not social media browsing)
+  reduced_social_interaction: 0.5
+  passive_media_binge: 0.5
+  shrinking_domain_diversity: 0.5
+  reduced_interactive_engagement: 0.5
+  food_ordering_pattern_shift: 0.5
+  calorie_nutrition_information_seeking: 0.5
+  shifted_sleep_timing: 0.5
+  changed_sleep_duration: 0.5
+  restless_device_switching: 0.5
+  slowed_variable_typing_dynamics: 0.5
+  extended_daytime_inactivity: 0.5
+  decline_effortful_interaction: 0.5
+  engagement_with_mental_health_content: 0.5
+  digital_self_withdrawal_data_purge_behavior: 0.5
+  fragmented_focus: 0.5
+  indecisive_information_seeking: 0.5
+  crisis_oriented_help_seeking: 0.5
+  self_harm_community_engagement: 0.5

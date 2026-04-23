@@ -1,0 +1,172 @@
+# Indicator Definitions for MDD Analysis (DSM-5)
+# 9 indicators with 29 unique biomarkers from evaluation 2.1
+#
+# Direction handling:
+#   - higher_is_worse: HIGH raw values indicate concern (symptom-descriptive names)
+#   - lower_is_worse: LOW raw values indicate concern (measurement-descriptive names)
+#
+# Weights are equal across biomarkers per indicator for simplicity.
+# Future work: tune based on empirical testing and expert input.
+
+1_depressed_mood:
+  biomarkers:
+    whispering:
+      type: speech
+      weight: 0.25
+      direction: higher_is_worse
+    prolonged_pauses:
+      type: speech
+      weight: 0.25
+      direction: higher_is_worse
+    reduced_social_interaction:
+      type: network
+      weight: 0.25
+      direction: higher_is_worse
+    passive_media_binge:
+      type: network
+      weight: 0.25
+      direction: higher_is_worse
+
+2_loss_of_interest:
+  biomarkers:
+    monoquality:
+      type: speech
+      weight: 0.25
+      direction: higher_is_worse
+    monopitch:
+      type: speech
+      weight: 0.25
+      direction: higher_is_worse
+    shrinking_domain_diversity:
+      type: network
+      weight: 0.25
+      direction: higher_is_worse
+    reduced_interactive_engagement:
+      type: network
+      weight: 0.25
+      direction: higher_is_worse
+
+3_weight_changes:
+  biomarkers:
+    pitch:
+      type: speech
+      weight: 0.25
+      direction: lower_is_worse
+    voice_breathiness_noise:
+      type: speech
+      weight: 0.25
+      direction: higher_is_worse
+    food_ordering_pattern_shift:
+      type: network
+      weight: 0.25
+      direction: higher_is_worse
+    calorie_nutrition_information_seeking:
+      type: network
+      weight: 0.25
+      direction: higher_is_worse
+
+4_insomnia_hypersomnia:
+  biomarkers:
+    speech_prosody:
+      type: speech
+      weight: 0.25
+      direction: lower_is_worse
+    speech_quality:
+      type: speech
+      weight: 0.25
+      direction: lower_is_worse
+    shifted_sleep_timing:
+      type: network
+      weight: 0.25
+      direction: higher_is_worse
+    changed_sleep_duration:
+      type: network
+      weight: 0.25
+      direction: higher_is_worse
+
+5_psychomotor_agitation_retardation:
+  biomarkers:
+    slow_speech:
+      type: speech
+      weight: 0.25
+      direction: higher_is_worse
+    prolonged_pauses:
+      type: speech
+      weight: 0.25
+      direction: higher_is_worse
+    restless_device_switching:
+      type: network
+      weight: 0.25
+      direction: higher_is_worse
+    slowed_variable_typing_dynamics:
+      type: network
+      weight: 0.25
+      direction: higher_is_worse
+
+6_fatigue_loss_of_energy:
+  biomarkers:
+    speech_prosody:
+      type: speech
+      weight: 0.25
+      direction: lower_is_worse
+    speech_quality:
+      type: speech
+      weight: 0.25
+      direction: lower_is_worse
+    extended_daytime_inactivity:
+      type: network
+      weight: 0.25
+      direction: higher_is_worse
+    decline_effortful_interaction:
+      type: network
+      weight: 0.25
+      direction: higher_is_worse
+
+7_worthlessness_guilt:
+  biomarkers:
+    engagement_with_mental_health_content:
+      type: network
+      weight: 0.5
+      direction: higher_is_worse
+    digital_self_withdrawal_data_purge_behavior:
+      type: network
+      weight: 0.5
+      direction: higher_is_worse
+
+8_diminished_ability_to_think_concentrate:
+  biomarkers:
+    speech_quality:
+      type: speech
+      weight: 0.25
+      direction: lower_is_worse
+    monopitch:
+      type: speech
+      weight: 0.25
+      direction: higher_is_worse
+    fragmented_focus:
+      type: network
+      weight: 0.25
+      direction: higher_is_worse
+    indecisive_information_seeking:
+      type: network
+      weight: 0.25
+      direction: higher_is_worse
+
+9_suicidality:
+  biomarkers:
+    voice_production:
+      type: speech
+      weight: 0.25
+      direction: lower_is_worse
+    vocalization:
+      type: speech
+      weight: 0.25
+      direction: lower_is_worse
+    crisis_oriented_help_seeking:
+      type: network
+      weight: 0.25
+      direction: higher_is_worse
+    self_harm_community_engagement:
+      type: network
+      weight: 0.25
+      direction: higher_is_worse

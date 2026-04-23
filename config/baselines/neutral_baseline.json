@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "name": "Evaluation Scenario 01 Baseline",
+    "description": "Baseline for evaluation 2.1 — young adult, healthy state before depressive behavior onset. Mean 0.25 for higher_is_worse biomarkers, 0.75 for lower_is_worse biomarkers, std 0.15 for all.",
+    "created": "2026-03-01",
+    "version": "1.0"
+  },
+  "baselines": {
+    "whispering": { "mean": 0.25, "std": 0.15 },
+    "prolonged_pauses": { "mean": 0.25, "std": 0.15 },
+    "reduced_social_interaction": { "mean": 0.25, "std": 0.15 },
+    "passive_media_binge": { "mean": 0.25, "std": 0.15 },
+    "monoquality": { "mean": 0.25, "std": 0.15 },
+    "monopitch": { "mean": 0.25, "std": 0.15 },
+    "voice_breathiness_noise": { "mean": 0.25, "std": 0.15 },
+    "shrinking_domain_diversity": { "mean": 0.25, "std": 0.15 },
+    "reduced_interactive_engagement": { "mean": 0.25, "std": 0.15 },
+    "pitch": { "mean": 0.75, "std": 0.15 },
+    "food_ordering_pattern_shift": { "mean": 0.25, "std": 0.15 },
+    "calorie_nutrition_information_seeking": { "mean": 0.25, "std": 0.15 },
+    "speech_prosody": { "mean": 0.75, "std": 0.15 },
+    "speech_quality": { "mean": 0.75, "std": 0.15 },
+    "shifted_sleep_timing": { "mean": 0.25, "std": 0.15 },
+    "changed_sleep_duration": { "mean": 0.25, "std": 0.15 },
+    "slow_speech": { "mean": 0.25, "std": 0.15 },
+    "restless_device_switching": { "mean": 0.25, "std": 0.15 },
+    "slowed_variable_typing_dynamics": { "mean": 0.25, "std": 0.15 },
+    "extended_daytime_inactivity": { "mean": 0.25, "std": 0.15 },
+    "decline_effortful_interaction": { "mean": 0.25, "std": 0.15 },
+    "engagement_with_mental_health_content": { "mean": 0.25, "std": 0.15 },
+    "digital_self_withdrawal_data_purge_behavior": { "mean": 0.25, "std": 0.15 },
+    "fragmented_focus": { "mean": 0.25, "std": 0.15 },
+    "indecisive_information_seeking": { "mean": 0.25, "std": 0.15 },
+    "voice_production": { "mean": 0.75, "std": 0.15 },
+    "vocalization": { "mean": 0.75, "std": 0.15 },
+    "crisis_oriented_help_seeking": { "mean": 0.25, "std": 0.15 },
+    "self_harm_community_engagement": { "mean": 0.25, "std": 0.15 }
+  }
+}

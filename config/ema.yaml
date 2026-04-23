@@ -1,0 +1,16 @@
+# EMA (Exponential Moving Average) Smoothing Configuration
+# Reduces noise in indicator scores and prevents rapid oscillations
+# in context transitions
+
+# Smoothing factor (0 < alpha <= 1)
+# Higher values = less smoothing (more responsive to recent data)
+# Lower values = more smoothing (more stable but slower to respond)
+alpha: 0.4
+
+# Threshold buffer to prevent jitter in state transitions
+# Prevents rapid back-and-forth between states
+hysteresis: 0.05
+
+# Minimum number of periods before allowing context transition
+# Ensures state changes are sustained before triggering transition
+dwell_time: 1

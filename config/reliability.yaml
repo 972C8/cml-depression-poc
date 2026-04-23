@@ -1,0 +1,43 @@
+# Data Reliability Configuration
+#
+# Controls how data quality and coverage are weighted when computing
+# the reliability score for indicator computations. A higher reliability
+# score indicates more trustworthy results.
+#
+# The reliability formula is:
+#   data_reliability = (coverage * coverage_weight) + (quality * quality_weight)
+#
+# Where:
+#   - coverage = fraction of expected biomarkers that have data (0-1)
+#   - quality = average data quality score of available biomarkers (0-1)
+
+# Coverage Weight
+# ---------------
+# How much the availability of biomarkers contributes to reliability.
+# Higher values prioritize having more biomarkers available over data quality.
+#
+# Range: 0.0 - 1.0
+# Default: 0.6 (coverage accounts for 60% of reliability score)
+coverage_weight: 0.6
+
+# Quality Weight
+# --------------
+# How much the data quality (based on historical data points) contributes
+# to reliability. Higher values prioritize well-established baselines.
+#
+# Note: coverage_weight + quality_weight should equal 1.0 for normalized scores
+#
+# Range: 0.0 - 1.0
+# Default: 0.4 (quality accounts for 40% of reliability score)
+quality_weight: 0.4
+
+# Population Baseline Quality Penalty
+# ------------------------------------
+# When using population baselines instead of user-specific baselines
+# (cold-start scenario), the quality score is multiplied by this penalty factor.
+# This reflects lower confidence in population-derived baselines compared to
+# personalized baselines built from the user's own data.
+#
+# Range: 0.0 - 1.0
+# Default: 0.5 (population baselines get at most 50% quality score)
+population_baseline_quality_penalty: 0.5

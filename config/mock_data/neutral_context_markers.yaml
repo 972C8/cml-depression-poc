@@ -1,0 +1,26 @@
+# Neutral context marker baselines for mock data generation (evaluation 2.1)
+# Used during normal periods when no scenario is active.
+# Values represent a generic everyday environment where no specific context is detected.
+context_type: environment
+markers:
+  people_in_room:
+    baseline: 1.5
+    variance: 0.5
+    min_value: 0
+    max_value: 2
+    enforce_integer_value: true
+  ambient_noise:
+    baseline: 0.4
+    variance: 0.15
+  network_activity_level:
+    baseline: 0.4
+    variance: 0.3
+  door_open_events:
+    baseline: 3
+    variance: 2
+    min_value: 0
+    max_value: 5
+    enforce_integer_value: true
+  audio_source_digital:
+    baseline: 0.1
+    variance: 0.1

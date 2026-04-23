@@ -1,0 +1,4 @@
+# Scenario: Neutral, no overrides
+name: neutral
+description: "Neutral scenario without scenario-specific overrides"
+overrides: {}
