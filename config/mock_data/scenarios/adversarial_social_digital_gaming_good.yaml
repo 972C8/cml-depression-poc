@@ -22,7 +22,7 @@ overrides:
       max_value: 1
       enforce_integer_value: true
     ambient_noise: # high — same as adversarial scenario
-      baseline: 0.9
+      baseline: 0.5
       variance: 0.1
     network_activity_level:
       baseline: 0.9

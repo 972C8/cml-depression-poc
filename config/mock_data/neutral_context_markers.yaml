@@ -21,6 +21,6 @@ markers:
     min_value: 0
     max_value: 5
     enforce_integer_value: true
-  audio_source_digital:
-    baseline: 0.1
-    variance: 0.1
+  #audio_source_digital: <-- include for scenario 2
+    #baseline: 0.1
+    #variance: 0.1
